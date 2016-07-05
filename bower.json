@@ -1,0 +1,23 @@
+{
+  "name": "angular-range-slider",
+  "main": "angular-range-slider.js",
+  "homepage": "https://github.com/viewthespace/angular-range-slider",
+  "authors": [
+    "Kyle Holzinger <kylelholzinger@gmail.com>"
+  ],
+  "description": "A customizable range slider that allows you to select two separate numbers via a slider",
+  "keywords": [
+    "angular",
+    "range",
+    "slider",
+    "vts"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
