@@ -63,13 +63,13 @@ app.directive('ovtsRangeSlider', function() {
       }
 
       function commaFormatter(val){
-        if (typeof val !== 'undefined'){
+        if (val != undefined){
           return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
       }
 
       function removeComma(val){
-        if (typeof val !== 'undefined'){
+        if (val != undefined){
           return parseInt(val.toString().replace(",", ""));
         }
       }
