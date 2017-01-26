@@ -46,6 +46,10 @@ app.directive('ovtsRangeSlider', function() {
         if(ngModel.$viewValue) {
           min = $scope.minRange = ngModel.$viewValue.min;
           max = $scope.maxRange = ngModel.$viewValue.max;
+          if($scope.options && $scope.options.max < parseInt(max)) {
+            // prevent slider from going outside its actual max
+            max = $scope.maxRange = $scope.options.max;
+          }
         }else if(options) {
           min = options.min;
           max = options.max;
